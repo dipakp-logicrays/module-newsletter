@@ -1,0 +1,66 @@
+<div class="block newsletter">
+  <div class="title"><strong><?= /* @noEscape */ __('Newsletter') ?></strong></div>
+  <div class="content">
+    <form class="form subscribe"
+          novalidate
+          action="<?= $block->escapeUrl($block->getFormActionUrl()) ?>"
+          method="post"
+          data-mage-init='{"validation": {"errorClass": "mage-error"}}'
+          id="newsletter-validate-detail">
+      <div class="field firstname">
+        <label class="label" for="firstname">
+          <span><?= $block->escapeHtml(__('First Name')) ?></span>
+        </label>
+        <div class="control">
+          <input name="firstname" 
+                 type="text" id="firstname" 
+                 placeholder="<?= $block->escapeHtmlAttr(__('First Name')) ?>"
+                 data-validate="{required:true}"/>
+        </div>
+      </div>
+      <div class="field lastname">
+        <label class="label" for="lastname">
+          <span><?= /* @noEscape */ $block->escapeHtml(__('Last Name')) ?></span>
+        </label>
+        <div class="control">
+          <input name="lastname" 
+                 type="text" 
+                 id="lastname" 
+                 placeholder="<?= $block->escapeHtmlAttr(__('Last Name')) ?>"
+                 data-validate="{required:true}"/>
+        </div>
+      </div>
+      <div class="field newsletter">
+        <label class="label" for="newsletter">
+          <span><?= /* @noEscape */ $block->escapeHtml(__('Sign Up for Our Newsletter:'));?></span>
+        </label>
+        <div class="control">
+          <input name="email" 
+                 type="email" 
+                 id="newsletter"
+                 placeholder="<?= /* @noEscape */ $block->escapeHtmlAttr(__('Enter your email address')) ?>"
+                 data-validate="{required:true, 'validate-email':true}"/>
+        </div>
+      </div>
+      <div class="field privacy-agreement">
+        <input type="checkbox" 
+              value="1" 
+              name="privacy-agreement" 
+              id="privacy-agreement" 
+              data-validate="{required:true}"
+            />
+        <label for="privacy-agreement">
+            I have read and agree to the to the 
+              <a href="<?= /* @noEscape */ $block->getBaseUrl();?>privacy-cookies-policy">Privacy Policy</a>
+        </label>
+      </div>
+      <div class="actions">
+        <button class="action subscribe primary" 
+                title="<?= $block->escapeHtmlAttr(__('Join')) ?>" 
+                type="submit">
+          <span><?= /* @noEscape */ $block->escapeHtml(__('Join')) ?></span>
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

@@ -1,8 +1,7 @@
-<<<<<<< HEAD
 # module-newsletter
 Magento 2x Newsletter adding new field Guest First Name, Guest Last Name and Privacy agreement checkbox to frontend newsletter form.
 =======
-﻿Magento 2 Newsletter module overview 
+Magento 2 Newsletter module overview 
 =========================================
 
 Magento 2x Newsletter adding new field Guest First Name, Guest Last Name and Privacy agreement checkbox to frontend newsletter form.
@@ -34,4 +33,3 @@ one by one below commands:
 
 THANK YOU!
 
->>>>>>> Release 1.0.0

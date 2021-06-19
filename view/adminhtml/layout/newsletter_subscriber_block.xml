@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+  <body>
+    <referenceBlock name="adminhtml.newslettrer.subscriber.grid.columnSet">
+      <block class="Magento\Backend\Block\Widget\Grid\Column" as="guest_firstname">
+        <arguments>
+          <argument name="header" xsi:type="string" translate="true">Guest First Name</argument>
+          <argument name="index" xsi:type="string">guest_firstname</argument>
+          <argument name="header_css_class" xsi:type="string">col-firstname</argument>
+          <argument name="column_css_class" xsi:type="string">ccol-firstname</argument>
+        </arguments>
+      </block>
+      <block class="Magento\Backend\Block\Widget\Grid\Column" as="guest_lastname">
+        <arguments>
+          <argument name="header" xsi:type="string" translate="true">Guest Last Name</argument>
+          <argument name="index" xsi:type="string">guest_lastname</argument>
+          <argument name="header_css_class" xsi:type="string">col-lastname</argument>
+          <argument name="column_css_class" xsi:type="string">ccol-lastname</argument>
+        </arguments>
+      </block>
+    </referenceBlock>
+  </body>
+</page>
